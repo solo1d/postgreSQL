@@ -12,9 +12,8 @@ sudo systemctl start postgresql.service
 ## 初始化数据库
 
 ```bash
-#切换到 postgres 用户
-# 我这边选择暂时切换到root,然后通过root进行跳转
-su - postgres
+#切换到 postgres 用户, 并连接到数据库
+sudo -u postgres psql
 
 # 在 postgres 用户下的命令行进行登录数据库
 psql postgres
